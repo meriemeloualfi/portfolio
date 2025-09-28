@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 100; */
+    font-style: normal;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+  
+  /* Style the scrollbar track */
+  ::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #0c0e0e; /* Background of the track */
+  }
+  
+  /* Style the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #ffd2a9; /* Color of the thumb */
+    border-radius: 6px; /* Rounded corners */
+  }
+  
+
+  @keyframes upDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-up-down {
+    animation: upDown 3s ease-in-out infinite;
+  }
+
+body{
+  background-color: #0c0e0e;
+}
