@@ -9,38 +9,44 @@ import Skills from '../components/home/Skills';
 import Contact from '../components/home/Contact';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-
 const Home = () => {
-    return (
-        <>
-            <Navbar />
-            {/* body */}
-            <div className="px-[8vw] py-[15vh] lg:py-[12vh] border-b-[1px] border-b-[#ddd]/25">
-                <Hero />
-                <About />
-                <Projects />
-                <Resume />
-                <Skills />
-                <Contact />
-            </div>
+  return (
+    <>
+      <Navbar />
 
-            <Footer />
+      {/* Body */}
+      <div className="px-[8vw] py-[15vh] lg:py-[12vh] border-b-[1px] border-b-[#ddd]/25">
+        <Hero />
+        <About />
+        <Projects />
+        <Resume />
+        <Skills />
+        <Contact />
+      </div>
 
-            {/*  fixed links  */}
-            {/* fixed links */}
-<section className='fixed lg:bottom-5 lg:right-5 bottom-8 right-5 z-50'>  {/* z-50 ajouté */}
-    <div className='flex flex-col gap-3'>
-        <a href="https://www.linkedin.com/in/meriemeloualfi/">
+      <Footer />
+
+      {/* Fixed links */}
+      <section className='fixed lg:bottom-5 lg:right-5 bottom-8 right-5 z-50'>
+        <div className='flex flex-col gap-3'>
+          <a 
+            href="https://www.linkedin.com/in/meriemeloualfi/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <FaLinkedinIn className='text-[#bdd9d8] cursor-pointer lg:text-[16px] text-[22px]' />
-        </a>
-        <a href="https://github.com/meriemeloualfi">
+          </a>
+          <a 
+            href="https://github.com/meriemeloualfi" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             <FaGithub className='text-[#bdd9d8] cursor-pointer lg:text-[16px] text-[22px]' />
-        </a>
-    </div>
-</section>
-
-        </>
-    );
+          </a>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default Home;
