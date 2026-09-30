@@ -15,6 +15,8 @@ const Projects = () => {
     { img: image.pr3, link: "https://github.com/meriemeloualfi/Yummy", type: "github" },
     { img: image.pr4, link: "https://github.com/meriemeloualfi/Fashe", type: "github" },
     { img: image.pr7, link: "https://github.com/meriemeloualfi/dyslexie", type: "github" },
+    { img: image.pr9, link: "https://github.com/meriemeloualfi/StudyBuddy", type: "github" },
+    { img: image.pr10, link: "https://github.com/meriemeloualfi/ablens-prediction", type: "github" },
     { img: image.pr6, link: "https://www.figma.com/proto/KhAlg8uTx4lFw5RVONxCg1/Healthy?node-id=0-1&t=SX4KwayVvnhhwwp0-1", type: "figma" },
     { img: image.pr5, link: "https://www.figma.com/proto/tF7LzH8YmAQOhPCaSiOf8u/Plant-Shop-E-Commerce-App-design?node-id=0-1&t=7hPfoMfQgnJPuA5L-1", type: "figma" },
     { img: image.pr2, link: "https://www.figma.com/proto/KXWigE9z867eawKQl1B2BN/Travel-App--Community-?node-id=0-1&t=Le1Z8iCHz73i9Jpw-1", type: "figma" },
@@ -61,11 +63,11 @@ const Projects = () => {
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
               <div className="relative group rounded-2xl border border-[#333] hover:border-[#ffd2a9] shadow-md shadow-black/60 overflow-hidden transition-all duration-500">
-                {/* Image */}
+                {/* Image : même format pour toutes les cartes */}
                 <img
                   src={project.img}
                   alt={`project-${index}`}
-                  className="w-full h-auto rounded-2xl transition-transform duration-500 hover:scale-105"
+                  className="w-full aspect-[4/5] object-cover object-top rounded-2xl transition-transform duration-500 hover:scale-105"
                 />
 
                 {/* Icon conditionnelle */}

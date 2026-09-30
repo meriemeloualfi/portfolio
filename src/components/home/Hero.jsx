@@ -7,9 +7,9 @@ import image from '../../constants/image';
 const Hero = () => {
     return (
         <>
-           <div 
+   <div 
   id="hero" 
-  className="flex flex-col md:flex-row items-start justify-start min-h-[77vh] pt-10 md:pt-16 pl-6 md:pl-16 gap-8 md:gap-0"
+  className="flex flex-col md:flex-row items-start md:items-center justify-start min-h-[calc(100vh-110px)] pt-10 md:pt-0 pl-6 md:pl-16 gap-8 md:gap-0"
 >
 
 
@@ -32,11 +32,11 @@ const Hero = () => {
                         />
                     </p>
                     <p className="text-[#fff] text-[30px] md:text-[40px] font-semibold pb-4">
-                        Software Engineer
+                        AI & Data Science Engineering Student
                     </p>
                     <p className="text-[16px] md:text-[18px] text-[#DDD] w-full md:w-[500px] mx-auto md:mx-0 pb-4">
-                        I design and build scalable, high-performance applications by turning complex problems 
-                        into simple, efficient, and elegant software solutions.
+                        I turn complex data into concrete decisions by building intelligent and reliable
+                        AI and machine learning solutions. Currently looking for a PFE internship.
                     </p>
 
                     <div className="flex justify-center md:justify-start">

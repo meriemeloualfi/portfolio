@@ -1,12 +1,29 @@
-
 import React from 'react';
-import { FaBootstrap, FaReact, FaSass, FaGithub, FaLaravel, FaJava } from 'react-icons/fa';
+import { FaBootstrap, FaReact, FaSass, FaGithub, FaLaravel, FaJava, FaChartBar, FaProjectDiagram } from 'react-icons/fa';
 import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript } from 'react-icons/io';
 import { RiTailwindCssFill } from 'react-icons/ri';
-import { SiPython, SiDjango, SiFigma, SiC, SiCplusplus, SiPhp } from "react-icons/si";
+import {
+  SiPython, SiDjango, SiFigma, SiC, SiCplusplus, SiPhp,
+  SiTensorflow, SiKeras, SiPytorch, SiScikitlearn, SiPandas, SiNumpy,
+  SiFastapi, SiApachehadoop
+} from "react-icons/si";
 import { motion } from "motion/react";
 
 const skills = [
+  // AI & Data Science
+  { name: "Python", icon: SiPython, color: "#306998" },
+  { name: "TensorFlow", icon: SiTensorflow, color: "#FF6F00" },
+  { name: "Keras", icon: SiKeras, color: "#D00000" },
+  { name: "PyTorch", icon: SiPytorch, color: "#EE4C2C" },
+  { name: "Scikit-learn", icon: SiScikitlearn, color: "#F7931E" },
+  { name: "Pandas", icon: SiPandas, color: "#E70488" },
+  { name: "NumPy", icon: SiNumpy, color: "#4DABCF" },
+  { name: "Hadoop", icon: SiApachehadoop, color: "#66CCFF" },
+  { name: "Power BI", icon: FaChartBar, color: "#F2C811" },
+  { name: "FastAPI", icon: SiFastapi, color: "#009688" },
+  { name: "n8n", icon: FaProjectDiagram, color: "#EA4B71" },
+
+  // Development
   { name: "HTML", icon: IoLogoHtml5, color: "#F16529" },
   { name: "CSS", icon: IoLogoCss3, color: "#244bdc" },
   { name: "SASS", icon: FaSass, color: "#CD6799" },
@@ -16,7 +33,6 @@ const skills = [
   { name: "Laravel", icon: FaLaravel, color: "#F05340" },
   { name: "JavaScript", icon: IoLogoJavascript, color: "#f0db4f" },
   { name: "GitHub", icon: FaGithub, color: "#111" },
-  { name: "Python", icon: SiPython, color: "#306998" },
   { name: "Django", icon: SiDjango, color: "#092E20" },
   { name: "Figma", icon: SiFigma, color: "#F24E1E" },
   { name: "C", icon: SiC, color: "#A8B9CC" },
@@ -44,7 +60,7 @@ const Skills = () => (
       transition={{ duration: 1 }}
       viewport={{ once: false }}
     >
-      Where your ideas meet code to create unforgettable digital experiences.
+      From data to intelligent applications: the tools and technologies I use to build AI solutions.
     </motion.p>
 
     <div className="flex flex-wrap lg:px-[4vw] gap-6 justify-center">
@@ -80,4 +96,3 @@ const Skills = () => (
 );
 
 export default Skills;
-

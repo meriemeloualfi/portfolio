@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "motion/react";
 
 const stats = [
-  { value: "12+", text: "Months of Experience" },
-  { value: "09+", text: "Projects Completed" },
-  { value: "05+", text: "Happy Clients" },
+  { value: "04", text: "Internships Completed" },
+  { value: "07+", text: "Projects Completed" },
+  { value: "06+", text: "Certifications" },
 ];
 
 const About = () => {
@@ -37,13 +37,13 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <p className="text-[#DDD] text-[14px] sm:text-[15px] lg:text-[16px]">
-          I’m <span className="font-semibold text-[#ffd2a9]">EL OUALFI Meriem</span>, a software engineer passionate about building reliable and creative digital solutions.
+          I’m <span className="font-semibold text-[#ffd2a9]">EL OUALFI Meriem</span>, a final-year AI & Data Science engineering student at EMSI, passionate about turning data into concrete decisions.
         </p>
         <p className="text-[#fff] text-[14px] sm:text-[15px] lg:text-[16px]">
-          I design software that bridges creativity with technology, focusing on clean architecture and maintainable code.
+          I build intelligent solutions, from machine learning and NLP models to full-stack applications that put them to work, with a focus on rigor and clean, maintainable code.
         </p>
         <p className="text-[#DDD] text-[14px] sm:text-[15px] lg:text-[16px]">
-          Innovation, problem-solving, and impactful experiences drive my work.
+          Curiosity, problem-solving, and real-world impact drive my work. I’m currently looking for a PFE internship in AI & Data Science.
         </p>
       </motion.div>
 
