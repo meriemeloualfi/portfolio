@@ -11,7 +11,9 @@ export default{
     pr8 : require('../assets/images/pr8.png'),
     pr9 : require('../assets/images/pr9.png'),
     pr10 : require('../assets/images/pr10.png'),
-
-
+    pr11 : require('../assets/images/pr11.png'),
+    pr12 : require('../assets/images/pr12.png'),
+    pr13 : require('../assets/images/pr13.png'),
+    pr14 : require('../assets/images/pr14.png'),
     
 }
